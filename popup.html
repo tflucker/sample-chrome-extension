@@ -1,44 +1,42 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-            button {
-                height: 30px;
-                width: 30px;
-                outline: none;
-            }
 
-            #popup-container {
-                height: 350px;
-                width: 150px;
-            }
-        </style>
-    </head>
-    <body>
-        <div id="popup-container">
-            <h2>Welcome to the background color-picker!</h2>
-            <hr />
-            <p>Select a new color for the background:</p>
-            <div id="defaultColor1" style="margin-bottom: 1rem;">
-                <span>Default color (white): 
-                    <button id="changeColor1"></button>
-                </span>
-            </div>
-            <div id="defaultColor1" style="margin-bottom: 1rem;">
-                <span>Default color (black): 
-                    <button id="changeColor2"></button>
-                </span>
-            </div>
+<head>
+    <style>
+        button {
+            height: 30px;
+            width: 30px;
+            outline: none;
+        }
 
-            <div id="buttonDiv" style="margin-top: 1rem; margin-bottom: 1rem;">
-                <p>Other Color options:</p>
+        #popup-container {
+            height: 350px;
+            width: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="popup-container">
+        <h2>Welcome to the background color-picker!</h2>
+        <hr />
+        <div id="background-color-container">
+            <div id="backgroundBtnDiv" style="margin-top: 1rem; margin-bottom: 1rem;">
+                <p>Background color options:</p>
             </div>
         </div>
         <hr />
-        <div id="links" style="bottom:0;">
+        <div id="text-color-container">
+            <p>Text color options:</p>
+            <div id="textBtnDiv" style="margin-top: 1rem; margin-bottom: 1rem;"></div>
+        </div>
+        <hr />
+        <div id="credits" style="bottom:0; margin-bottom: 5px;">
             <p>Created By: <a href="https://github.com/tflucker" target="_blank">Timothy Flucker</a></p>
         </div>
+    </div>
 
-        <script src="popup.js"></script>
-    </body>
+    <script src="popup.js"></script>
+</body>
+
 </html>
